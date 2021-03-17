@@ -2,6 +2,8 @@
 
 This Web application is based of off Laravel, the search was built using Livewire. The movie details are propagated using the TheMovieDB API.
 
+ The app is still being developed, but you can view the current progress at: movie.thenovalab.ca
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
