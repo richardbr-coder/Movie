@@ -90,6 +90,7 @@ class ComposerStaticInitf5a434f26a044c4b5f9eb554a7c121c2
             'Symfony\\Component\\ErrorHandler\\' => 31,
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
+            'Spatie\\ViewModels\\' => 18,
         ),
         'R' => 
         array (
@@ -316,6 +317,10 @@ class ComposerStaticInitf5a434f26a044c4b5f9eb554a7c121c2
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
+        'Spatie\\ViewModels\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/spatie/laravel-view-models/src',
+        ),
         'Ramsey\\Uuid\\' => 
         array (
             0 => __DIR__ . '/..' . '/ramsey/uuid/src',
@@ -519,6 +524,7 @@ class ComposerStaticInitf5a434f26a044c4b5f9eb554a7c121c2
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\MoviesControler' => __DIR__ . '/../..' . '/app/Http/Controllers/MoviesControler.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
+        'App\\Http\\Livewire\\SearchDropdown' => __DIR__ . '/../..' . '/app/Http/Livewire/SearchDropdown.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\PreventRequestsDuringMaintenance' => __DIR__ . '/../..' . '/app/Http/Middleware/PreventRequestsDuringMaintenance.php',
@@ -4409,6 +4415,9 @@ class ComposerStaticInitf5a434f26a044c4b5f9eb554a7c121c2
         'SebastianBergmann\\Type\\UnknownType' => __DIR__ . '/..' . '/sebastian/type/src/UnknownType.php',
         'SebastianBergmann\\Type\\VoidType' => __DIR__ . '/..' . '/sebastian/type/src/VoidType.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
+        'Spatie\\ViewModels\\Console\\ViewModelMakeCommand' => __DIR__ . '/..' . '/spatie/laravel-view-models/src/Console/ViewModelMakeCommand.php',
+        'Spatie\\ViewModels\\Providers\\ViewModelsServiceProvider' => __DIR__ . '/..' . '/spatie/laravel-view-models/src/Providers/ViewModelsServiceProvider.php',
+        'Spatie\\ViewModels\\ViewModel' => __DIR__ . '/..' . '/spatie/laravel-view-models/src/ViewModel.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'Symfony\\Component\\Console\\Application' => __DIR__ . '/..' . '/symfony/console/Application.php',
         'Symfony\\Component\\Console\\Color' => __DIR__ . '/..' . '/symfony/console/Color.php',

@@ -27,7 +27,7 @@
                 </p>
                 <br>
                 <div class="mt12">
-                    <h4 class="text-white font-semibold">Featured Cast</h4>
+                    <h4 class="text-white font-semibold">Featured Crew</h4>
                     <div class="flex flex-col md:flex-row mt-4">
                         
                             @foreach ($movie['credits']['crew'] as $crew)
@@ -35,7 +35,10 @@
                                     <div class="mr-8 "> 
                                         <div>{{ $crew['name'] }}</div>
                                         <div class="text-sm text-gray-400">{{ $crew['job'] }}</div>
-                                    </div>    
+                                    </div>
+                                    
+                                @else
+                                    @break
                                 @endif
                             @endforeach
 
@@ -48,6 +51,8 @@
                                             <div class="text-gray-400">{{ $production['name'] }}</div>
                                         
                                         </div>    
+                                    @else
+                                        @break
                                     @endif
                                 @endforeach
                             </div>
@@ -59,11 +64,14 @@
                                         <div class="mr-8"> 
                                             <div class="text-gray-400">{{ $lang['english_name'] }}</div>
                                         </div>    
+                                    @else
+                                        @break
                                     @endif
                                 @endforeach
                             </div>
                             
                             <div>
+                                
                                 <p class="mr-8">Gross revenue</p>
                                 @if ($movie['revenue'] > 0)
                                     <span class="text-gray-400">{{ number_format($movie['revenue'], 2) . 'USD' }}</span>
@@ -114,6 +122,8 @@
                                 </div>
                             </div>
                         </div>
+                    @else
+                        @break
                     @endif
                 @endforeach
             </div>
@@ -131,6 +141,8 @@
                             <img src="{{ 'https://image.tmdb.org/t/p/w500/' . $image['file_path'] }}" alt="image" class="hover:opacity-75 transition ease-in-out duration-150">
                         </a>
                         </div>
+                    @else
+                        @break    
                     @endif
                 @endforeach
                 
