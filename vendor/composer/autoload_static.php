@@ -130,6 +130,7 @@ class ComposerStaticInitf5a434f26a044c4b5f9eb554a7c121c2
             'League\\CommonMark\\' => 18,
             'Laravel\\Tinker\\' => 15,
             'Laravel\\Sail\\' => 13,
+            'Laravel\\Breeze\\' => 15,
         ),
         'I' => 
         array (
@@ -405,6 +406,10 @@ class ComposerStaticInitf5a434f26a044c4b5f9eb554a7c121c2
         array (
             0 => __DIR__ . '/..' . '/laravel/sail/src',
         ),
+        'Laravel\\Breeze\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/breeze/src',
+        ),
         'Illuminate\\Support\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Macroable',
@@ -521,8 +526,10 @@ class ComposerStaticInitf5a434f26a044c4b5f9eb554a7c121c2
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\ActorsController' => __DIR__ . '/../..' . '/app/Http/Controllers/ActorsController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\MoviesControler' => __DIR__ . '/../..' . '/app/Http/Controllers/MoviesControler.php',
+        'App\\Http\\Controllers\\TvController' => __DIR__ . '/../..' . '/app/Http/Controllers/TvController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Livewire\\SearchDropdown' => __DIR__ . '/../..' . '/app/Http/Livewire/SearchDropdown.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
@@ -539,7 +546,14 @@ class ComposerStaticInitf5a434f26a044c4b5f9eb554a7c121c2
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\ViewModels\\ActorViewModel' => __DIR__ . '/../..' . '/app/ViewModels/ActorViewModel.php',
+        'App\\ViewModels\\ActorsViewModel' => __DIR__ . '/../..' . '/app/ViewModels/ActorsViewModel.php',
+        'App\\ViewModels\\MovieViewModel' => __DIR__ . '/../..' . '/app/ViewModels/MovieViewModel.php',
+        'App\\ViewModels\\MoviesViewModel' => __DIR__ . '/../..' . '/app/ViewModels/MoviesViewModel.php',
+        'App\\ViewModels\\TvShowViewModel' => __DIR__ . '/../..' . '/app/ViewModels/TvShowViewModel.php',
+        'App\\ViewModels\\TvViewModel' => __DIR__ . '/../..' . '/app/ViewModels/TvViewModel.php',
         'App\\View\\Components\\MovieCard' => __DIR__ . '/../..' . '/app/View/Components/MovieCard.php',
+        'App\\View\\Components\\TvCard' => __DIR__ . '/../..' . '/app/View/Components/TvCard.php',
         'Asm89\\Stack\\Cors' => __DIR__ . '/..' . '/asm89/stack-cors/src/Cors.php',
         'Asm89\\Stack\\CorsService' => __DIR__ . '/..' . '/asm89/stack-cors/src/CorsService.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
@@ -2542,6 +2556,8 @@ class ComposerStaticInitf5a434f26a044c4b5f9eb554a7c121c2
         'Illuminate\\View\\ViewName' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewName.php',
         'Illuminate\\View\\ViewServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewServiceProvider.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+        'Laravel\\Breeze\\BreezeServiceProvider' => __DIR__ . '/..' . '/laravel/breeze/src/BreezeServiceProvider.php',
+        'Laravel\\Breeze\\Console\\InstallCommand' => __DIR__ . '/..' . '/laravel/breeze/src/Console/InstallCommand.php',
         'Laravel\\Sail\\Console\\InstallCommand' => __DIR__ . '/..' . '/laravel/sail/src/Console/InstallCommand.php',
         'Laravel\\Sail\\Console\\PublishCommand' => __DIR__ . '/..' . '/laravel/sail/src/Console/PublishCommand.php',
         'Laravel\\Sail\\SailServiceProvider' => __DIR__ . '/..' . '/laravel/sail/src/SailServiceProvider.php',

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @livewireStyles
-    
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <title>Movie</title>
     </head>
         <body class="font-sans bg-gray-900 text-white">
@@ -22,23 +22,38 @@
                             <a href="{{ route('movies.index') }}" class="hover:text-gray-300">Movies</a>
                         </li>
                         <li class="md:ml-6 mt-3 md:mt-0">
-                            <a href="#" class="hover:text-gray-300">Tv Shows</a>
+                            <a href="{{ route('tv.index') }}" class="hover:text-gray-300">Tv Shows</a>
                         </li>
                         <li class="md:ml-6 mt-3 md:mt-0">
-                            <a href="#" class="hover:text-gray-300">Actors</a>
+                            <a href="{{ route('actors.index') }}" class="hover:text-gray-300">Actors</a>
                         </li>
                     </ul>
                     <div class="flex flex-col md:flex-row items-center">
                         <livewire:search-dropdown/>
                         <div class="md:ml-4 mt-3 md:mt-0">
-                            <a href="#">
-                                <img src="/img/avatar.jpeg" alt="avatar" class="rounded-full w-8 h-8">
-                            </a>
+                            @if (Route::has('login'))
+                                    <div>
+                                        @auth
+                                            
+                                            <a href="{{ url('/dashboard') }}" class="text-sm text-gray-200 underline">
+                                                <img src="/img/avatar.jpeg" alt="avatar" class="rounded-full w-8 h-8">
+                                            </a>
+                                        @else
+                                            <a href="{{ route('login') }}" class="text-sm text-gray-200 underline">Log in</a>
+                    
+                                            @if (Route::has('register'))
+                                                <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-200 underline">Register</a>
+                                            @endif
+                                        @endauth
+                                    </div>
+                            @endif
+                            
                         </div>
                     </div>
                 </div>
             </nav>
             @yield('content')
-    @livewireScripts
+            @livewireScripts
+            @yield('scripts')
 </body>
 </html>
