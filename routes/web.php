@@ -26,7 +26,6 @@ Route::get('/actors/page/{page?}', [ActorsController::class,'index']);
 
 Route::get('/actors/{id}', [ActorsController::class,'show'])->name('actors.show');
 
-
 // Route::get('/', function () {
 //     return view('welcome');
 // });
